@@ -10,13 +10,25 @@
 
 */
 @keyframes heart-bump {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.25); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes sparks-flash {
-  0%   { --animation-fill-sparks: transparent; }
-  50%  { --animation-fill-sparks: #ff0000; }
-  100% { --animation-fill-sparks: transparent; }
+  0% {
+    --animation-fill-sparks: transparent;
+  }
+  50% {
+    --animation-fill-sparks: #ff0000;
+  }
+  100% {
+    --animation-fill-sparks: transparent;
+  }
 }
