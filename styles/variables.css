@@ -1,1 +1,50 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-main: 'Inter', sans-serif;
+  --font-accent: 'PressStart2P', cursive;
+
+  --font-weight-regular: 410;
+  --font-weight-bold: 715;
+
+  --font-logo-size: clamp(
+    49px,
+    calc(49px + (65 - 49) * ((100vw - 375px) / (1440 - 375))),
+    65px
+  );
+  --font-header-p-size: clamp(
+    14px,
+    calc(14px + (23 - 14) * ((100vw - 375px) / (1440 - 375))),
+    23px
+  );
+
+  --grid-color: #d3d3d3;
+  --bg-bottom: #1a1a1a;
+  --bg-top: #e7e7e7;
+
+  --page-bg: repeating-linear-gradient(
+      to right,
+      var(--grid-color) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--grid-color) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(to bottom, var(--bg-top) 0.01%, var(--bg-bottom) 100%);
+
+  --container-min: 375px;
+  --container-max: 700px;
+  --container-inline: clamp(var(--container-min), 49vw, var(--container-max));
+
+  --btn-bg: #fff; /* фон кнопки */
+  --btn-ink: #fff; /* цвет текста */
+  --btn-fill: #000; /* цвет заливки */
+  --animation-fill-contour: #000; /* #FF0000; */
+  --animation-fill-sparks: transparent; /* #FF0000; */
+  --animation-fill-core: transparent;
+  --animation-fill-body: #fff;
+
+  --animation-fill-accent: #ff0000;
+  
+}
